@@ -47,8 +47,8 @@ npm run dev
 Create .env
 
 ```env
-Mongo_URI=
-Secret_Key=
+Mongo_URI=  mongodb://127.0.0.1:27017/lead_manager
+Secret_Key= 12345
 ```
 
 ## Future Improvements
