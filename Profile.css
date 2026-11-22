@@ -1,0 +1,113 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Poppins',sans-serif;
+}
+
+.profile-page{
+    min-height:100vh;
+    background:#f1f5f9;
+    padding:40px;
+}
+
+.profile-nav{
+    display:flex;
+    gap:15px;
+    margin-bottom:30px;
+}
+
+.profile-nav button{
+    background:#2563eb;
+    color:white;
+    border:none;
+    padding:10px 18px;
+    border-radius:8px;
+    cursor:pointer;
+    transition:.3s;
+}
+
+.profile-nav button:hover{
+    background:#1d4ed8;
+}
+
+.profile-card{
+    max-width:600px;
+    margin:auto;
+    background:white;
+    border-radius:20px;
+    padding:40px;
+    text-align:center;
+    box-shadow:0 10px 30px rgba(0,0,0,.08);
+}
+
+.avatar{
+
+    width:100px;
+    height:100px;
+
+    margin:auto;
+
+    border-radius:50%;
+
+    background:#2563eb;
+    color:white;
+
+    font-size:40px;
+    font-weight:bold;
+
+    display:flex;
+    justify-content:center;
+    align-items:center;
+
+    margin-bottom:20px;
+}
+
+.profile-card h1{
+    color:#1e293b;
+    margin-bottom:10px;
+}
+
+.email{
+    color:#64748b;
+    margin-bottom:30px;
+}
+
+.profile-info{
+    display:flex;
+    gap:20px;
+    justify-content:center;
+    flex-wrap:wrap;
+}
+
+.info-box{
+    width:200px;
+    padding:20px;
+    border-radius:12px;
+    background:#f8fafc;
+}
+
+.info-box h3{
+    color:#64748b;
+    margin-bottom:10px;
+}
+
+.info-box p{
+    color:#2563eb;
+    font-size:22px;
+    font-weight:bold;
+}
+
+.logout-btn{
+    background:#ef4444 !important;
+    color:white;
+    border:none;
+    padding:10px 18px;
+    border-radius:8px;
+    cursor:pointer;
+    transition:.3s;
+}
+
+.logout-btn:hover{
+    background:#dc2626 !important;
+}

@@ -1,0 +1,299 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Poppins',sans-serif;
+}
+
+body{
+    background:#f1f5f9;
+}
+
+.lead-page{
+    padding:30px;
+    min-height:100vh;
+}
+
+/* HEADER */
+
+.lead-header{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    margin-bottom:25px;
+}
+
+.lead-header h1{
+    color:#1e293b;
+    font-size:2rem;
+}
+
+.lead-header p{
+    color:#64748b;
+    margin-top:6px;
+}
+
+/* STATS */
+
+.lead-stats{
+    margin-bottom:25px;
+}
+
+.stat-card{
+    width:250px;
+    background:white;
+    padding:20px;
+    border-radius:15px;
+    box-shadow:0 10px 25px rgba(0,0,0,.08);
+}
+
+.stat-card h3{
+    color:#64748b;
+}
+
+.stat-card h2{
+    color:#2563eb;
+    margin-top:10px;
+    font-size:2rem;
+}
+
+/* FILTERS */
+
+.filters{
+    background:white;
+    padding:20px;
+    border-radius:15px;
+    display:flex;
+    flex-wrap:wrap;
+    gap:15px;
+    margin-bottom:25px;
+    box-shadow:0 10px 25px rgba(0,0,0,.05);
+}
+
+.filters input,
+.filters select{
+    padding:12px;
+    border:1px solid #dbe2ea;
+    border-radius:10px;
+    outline:none;
+    min-width:200px;
+}
+
+.filters input:focus,
+.filters select:focus{
+    border-color:#2563eb;
+}
+
+.reset-btn{
+    background:#ef4444;
+    color:white;
+    border:none;
+    border-radius:10px;
+    padding:12px 18px;
+    cursor:pointer;
+}
+
+/* BUTTONS */
+
+.add-btn{
+    background:#2563eb;
+    padding:12px 20px;
+    border:none;
+    border-radius:10px;
+    color:white;
+    cursor:pointer;
+    transition:.3s;
+}
+
+.add-btn:hover{
+    background:#1d4ed8;
+    transform:translateY(-2px);
+}
+
+.edit-btn{
+    background:#22c55e;
+    border:none;
+    color:white;
+    padding:8px 12px;
+    border-radius:8px;
+    cursor:pointer;
+    margin-right:8px;
+}
+
+.delete-btn{
+    background:#ef4444;
+    border:none;
+    color:white;
+    padding:8px 12px;
+    border-radius:8px;
+    cursor:pointer;
+}
+
+/* TABLE */
+
+.table-container{
+    background:white;
+    border-radius:15px;
+    overflow:hidden;
+    box-shadow:0 10px 25px rgba(0,0,0,.05);
+}
+
+table{
+    width:100%;
+    border-collapse:collapse;
+}
+
+thead{
+    background:#2563eb;
+}
+
+thead th{
+    color:white;
+    font-weight:600;
+}
+
+th,
+td{
+    padding:18px;
+    text-align:left;
+}
+
+tbody tr{
+    border-bottom:1px solid #f1f5f9;
+    transition:.2s;
+}
+
+tbody tr:hover{
+    background:#f8fafc;
+}
+
+/* STATUS */
+
+.status-select{
+    border:none;
+    padding:8px 10px;
+    border-radius:20px;
+    color:white;
+    font-weight:500;
+}
+
+.status-select.New{
+    background:#3b82f6;
+}
+
+.status-select.Contacted{
+    background:#f59e0b;
+}
+
+.status-select.Qualified{
+    background:#22c55e;
+}
+
+.status-select.Lost{
+    background:#ef4444;
+}
+
+/* PAGINATION */
+
+.pagination{
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    gap:15px;
+    margin-top:25px;
+}
+
+.pagination button{
+    background:#2563eb;
+    color:white;
+    border:none;
+    padding:10px 20px;
+    border-radius:8px;
+    cursor:pointer;
+}
+
+.pagination button:disabled{
+    opacity:.5;
+}
+
+/* MODAL */
+
+.modal-overlay{
+    position:fixed;
+    top:0;
+    left:0;
+    width:100%;
+    height:100%;
+    background:rgba(0,0,0,.5);
+
+    display:flex;
+    justify-content:center;
+    align-items:center;
+}
+
+.lead-modal{
+    background:white;
+    width:500px;
+    max-width:95%;
+    padding:30px;
+    border-radius:20px;
+    box-shadow:0 15px 40px rgba(0,0,0,.2);
+}
+
+.lead-modal h2{
+    margin-bottom:20px;
+    color:#1e293b;
+}
+
+.lead-modal form{
+    display:flex;
+    flex-direction:column;
+}
+
+.lead-modal label{
+    margin-top:12px;
+    margin-bottom:6px;
+    font-weight:500;
+}
+
+.lead-modal input,
+.lead-modal select{
+    padding:12px;
+    border:1px solid #dbe2ea;
+    border-radius:10px;
+}
+
+.modal-actions{
+    display:flex;
+    justify-content:flex-end;
+    gap:12px;
+    margin-top:20px;
+}
+
+/* EMPTY STATE */
+
+.no-data{
+    text-align:center;
+    padding:40px;
+    color:#64748b;
+}
+
+.header-actions{
+    display:flex;
+    gap:12px;
+}
+
+.home-btn{
+    background:#1e293b;
+    color:white;
+    border:none;
+    padding:10px 18px;
+    border-radius:8px;
+    cursor:pointer;
+    transition:.3s;
+}
+
+.home-btn:hover{
+    background:#334155;
+    transform:translateY(-2px);
+}
